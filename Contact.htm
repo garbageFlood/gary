@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href = "CSS/style.css" type = "text/css" rel = "stylesheet">
+		<meta charset = "UTF-8">
+		<title>Learning Support Site</title>
+	</head>
+	<body>
+		<div id = "container">
+		<div id = "header">
+			<div id = "box">
+				<a href = "index.htm"><img src = "images/ncilogo.jpg" id = "img1" alt = "nci logo"></a>
+			</div>
+			<div id = "text" style="display: none">Go to Home Page</div>
+			<script src = "javascript/logoHover.js">
+			</script>
+		</div>
+		<div id = "nav">
+			<div id = "holder">
+				<ul id = "ul1">
+					<li class = "nav1"><a href="index.htm">Home</a></li>
+					<li class = "nav1"><a href="Disability.htm">Disability</a></li>
+					<li class = "nav1"><a href="Maths.htm">Maths</a></li>
+					<li class = "nav1"><a href="Learning.htm">Learning</a></li>
+					<li class = "nav1"><a href="Computing.htm">Computing</a></li>
+					<li class = "nav1"><a href="Contact.htm" id = "onlink">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id = "contactPage">
+			<h3 id = "para">If you are having a problem you can fill 
+							out the form below <br/>and a member of Nci staff
+							will get back to you as soon as possible.</h3>
+				<form id = "Problem" name='mailForm' method='post' action='contact.htm'>
+					Full name:<br/> <input type="text" name="fullname"><br/>
+					Student Number:<br/> <input type="text" name="studentNumber"><br/>
+					Email:<br/> <input type="text" name="studentEmail"><br/>
+					Course:<br/> <input type="text" name="course"><br/>
+					<select name = "time">
+						<option value = "select">select</option>
+						<option value= "fullTime">Full Time Student</option>
+						<option value= "partTime">Part Time Student</option>
+					</select><br/>
+					<select name='problemArea' size='1'>
+						<option value="select">Select Problem Area</option>
+						<option value="Math">Math</option>
+						<option value="Computing">Computing</option>
+						<option value="Disability">Disablity</option>
+						<option value="Learning">Learning</option>
+					</select><br/>
+					<textarea name = "textarea" rows = "6" cols = "40">
+						Enter the problem you are having here
+					</textarea><br/>
+				
+					<input type="submit" value="Submit Problem" onclick = "myFunction()">
+					<script src = "javascript/areYouSure.js"></script>
+				</form>
+					<img src = "images/stickman.png" id = "stickman" alt = "a stickman in a tophat">
+				</div>
+			<div id = "footer420"></div>
+		</div>
+	</body>
+</html>
